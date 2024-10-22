@@ -1,0 +1,87 @@
+:root {
+  --color1: #181719;
+  --color2: #424242;
+  --color3: #092635;
+  --color4: #183d3d;
+  --color5: #a9b388;
+  --color6: #9ad0c2;
+  --color7: #faf1e4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(45deg, var(--color5), var(--color3));
+  color: #ffffff;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 2.5rem;
+}
+
+.content-div {
+  width: min(100vw, 450px);
+  min-height: 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px 0;
+  background-image: linear-gradient(
+    45deg,
+    var(--color2) 0%,
+    var(--color1) 100%
+  );
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+#text-input {
+  height: 35px;
+  width: 250px;
+  font-size: 1.2rem;
+  margin: 15px;
+}
+
+#check-btn {
+  width: 250px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--color3);
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-input {
+  font-size: 1.4rem;
+  /* color: var(--color5); */
+  margin-top: 10px;
+  text-align: center;
+}
+
+strong {
+  color: var(--color5);
+}
